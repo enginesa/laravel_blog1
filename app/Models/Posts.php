@@ -11,11 +11,13 @@ class Posts extends Model
 
     public function getCategory()
     {
-        return $this->hasOne("App\Models\Categories","id","category_id");
+        return $this->hasOne("App\Models\Categories","id","category_id")->select("name");
     }
 
     public static function getPostsMaxHit(){
-        return "test";
+        return Posts::query()
+            ->orderByDesc("view_hit")
+            ->get();
     }
 
 
