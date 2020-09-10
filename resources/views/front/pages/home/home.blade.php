@@ -2,7 +2,7 @@
 
 @section("content")
 
-    @include("front.pages.home.max_hit_posts");
+    @include("front.pages.home.max_hit_posts")
 
     <section class="section">
         <div class="container">

@@ -4,9 +4,9 @@
 <body>
 
 <div id="wrapper">
-    @include("front.includes.header");
+    @include("front.includes.header")
     @yield("content")
-    @include("front.includes.footer");
+    @include("front.includes.footer")
 
     <div class="dmtop">Scroll to Top</div>
 </div><!-- end wrapper -->
